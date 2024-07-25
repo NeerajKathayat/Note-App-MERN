@@ -12,13 +12,16 @@ const cookieParser = require('cookie-parser');
 app.use(cookieParser()); 
 
 app.use(cors({
-    origin: 'https://note-app-mern-frontend-two.vercel.app', 
-    credentials: true
+    origin: 'https://note-app-mern-frontend-two.vercel.app',
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+    allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
 }));
 
 app.use(express.json());
 
 const tokenSecret="abcdef"
+
 
 app.post("/signup",async (req,res)=>{
       const {name,email,password} = req.body;
