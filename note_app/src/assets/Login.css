@@ -1,0 +1,104 @@
+.Login-Container{
+    display:flex ;
+    /* align-items: center; */
+    margin-top: 100px;
+    /* height: 100vh; */
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 600;
+
+}
+
+/* input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: transparent !important; /* Set background to transparent */
+    /* color: fieldtext !important; */
+  /* } */
+   
+.Login-Div{
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+    /* align-items: center; */
+    text-align: left;
+    border: 1px solid rgb(228, 228, 228);
+    width: 100%;
+    max-width: 300px;
+    margin-inline: auto;
+    padding:28px 25px;
+    position: relative;
+
+}
+
+.Login{
+    font-size: 24px;
+    margin-block: 11px;
+}
+
+.Login-Div div{
+    text-align: center;
+    font-size: 13px;
+
+}
+
+.Login-Div div :nth-child(2){
+      color:#0D6EFD;
+      padding-left: 5px;
+
+}
+
+.Login-Div input{
+    padding: 10px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 5px;
+}
+
+.Login-Div input::placeholder{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 12px;
+}
+.Login-Div button{
+    background-color: #0D6EFD;
+    border: none;
+    padding: 9px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#Visible-On,#Visible-off{
+    position: absolute;
+    width: 20px;
+    right:40px;
+    top:155px;
+
+}
+
+
+
+
+/* For Chrome, Edge, Safari */
+input[type="password"]::-webkit-textfield-decoration-container {
+    display: none;
+}
+
+/* For Firefox */
+input[type="password"]::-moz-show-password {
+    display: none;
+}
+
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+
+
+.error-msg{
+    color: red;
+    font-size: 10px;
+}

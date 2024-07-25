@@ -1,0 +1,32 @@
+.Search-Div{
+     display: flex;
+     align-items: center;
+     /* justify-content: space-between; */
+      background-color: #f1f5f9;
+     padding-inline: 10px;
+     border-radius: 6px;
+     width:100%;
+     max-width:300px ;
+     
+}
+
+#Search{
+    padding:8px 12px;
+    outline: none;
+    border:none;
+    background-color: #f1f5f9;
+    flex: 1;
+    width:100%;
+     
+    
+}
+
+.Icons{
+    display: flex;
+    align-self: center;
+}
+.material-symbols-outlined {
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 24px;
+  }

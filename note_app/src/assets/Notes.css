@@ -1,0 +1,119 @@
+.Container-Div{
+    /* padding: 10px 30px; */
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 20px;
+    align-items: flex-start;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-inline: 20px;
+    /* width: 1362px; */
+    /* margin-inline: auto; */
+    position: relative;
+    overflow: hidden;
+    min-height: 100px;
+}
+.Container-Note{
+    border: 1px solid rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    gap:8px;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 13px;
+    color:rgb(126, 125, 125) ;
+    position: relative;
+}
+
+.Container-Note:hover{
+    box-shadow: 1px 5px 9px #00000029;
+}
+
+.Container-Note > :nth-child(1){
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+
+}
+
+.Container-Note > :nth-child(4){
+    display: flex;
+    justify-content: space-between;
+}
+
+.Container-Note > :nth-child(4) > p > span{
+    margin-right: 5px;
+}
+
+.CreateNote-Button{
+    background-color:#0D6EFD;
+    position: fixed;
+    right:12px;
+    bottom: 12px;
+    border-radius: 5px;
+}
+
+.CreateNote-Button span{
+    color: white;
+    margin: 0;
+    margin: 6px;
+    
+    
+}
+
+
+.Toast-success,.Toast-error{
+    display: flex;
+    gap:10px;
+    border:1px solid rgb(206, 202, 202);
+    
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px #00000029;
+    background-color: white;
+    position: absolute;
+    right: 12px;
+    transform: translateX(120%);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Toast-success{
+    border-left: 4px solid green;
+}
+
+.Toast-error{
+    border-left: 4px solid red;
+}
+
+
+.Toast-success.active, .Toast-error.active{
+   transform: translateX(0%);
+}
+
+.fa-check-circle{
+    color: green;
+}
+
+.fa-trash {
+    color: red;
+}
+
+.pinned{
+    position: absolute;
+    top:30px;
+    right:25px;
+    cursor: pointer;
+}
+
+.pinned.active{
+    color:blue;
+}
+
+.NoNote{
+    font-size: 20px;
+}

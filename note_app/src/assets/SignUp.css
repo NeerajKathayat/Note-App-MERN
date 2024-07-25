@@ -1,0 +1,11 @@
+#Visible-On2,#Visible-off2{
+    position: absolute;
+    width: 20px;
+    right:40px;
+    top:205px;
+
+}
+.error-msg{
+    color: red;
+    font-size: 10px;
+}
