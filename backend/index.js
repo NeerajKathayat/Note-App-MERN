@@ -23,6 +23,10 @@ app.use(express.json());
 const tokenSecret="abcdef"
 
 
+app.get("/",(req,res)=>{
+    res.send("HEllo")
+})
+
 app.post("/signup",async (req,res)=>{
       const {name,email,password} = req.body;
 
