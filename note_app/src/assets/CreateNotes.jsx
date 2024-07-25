@@ -52,7 +52,7 @@ const CreateNotes = ({setModal,notes,setNotes,currentNote,setCurrentNote,setNote
         if(currentNote){
             console.log(currentNote._id)
 
-            let updatedNote = await fetch(`https://note-app-mern-sable.vercel.app/edit-note/${currentNote._id}`,{
+            let updatedNote = await fetch(`https://note-backend-eight.vercel.app/edit-note/${currentNote._id}`,{
                 method:'PUT',
                 headers:{
                    'Content-Type':'application/json'
@@ -82,7 +82,7 @@ const CreateNotes = ({setModal,notes,setNotes,currentNote,setCurrentNote,setNote
         }
         else{
 
-            let newNote = await fetch("https://note-app-mern-sable.vercel.app/add-note",{
+            let newNote = await fetch("https://note-backend-eight.vercel.app/add-note",{
                 method:'POST',
                 headers:{
                    'Content-Type':'application/json'
