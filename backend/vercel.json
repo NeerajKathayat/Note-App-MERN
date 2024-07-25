@@ -1,20 +1,16 @@
 {
     "version": 2,
-    "name": "note",
+    "name":"note",
     "builds": [
         {
-            "src": "app.jsx",
-            "use": "@vercel/node",
-            "config": {
-                "maxLambdaSize": "50mb",
-                "includeFiles": ["*.jsx"]
-            }
+            "src": "app.js",
+            "use": "@vercel/node"
         }
     ],
     "routes": [
-        {
-            "src": "/api/(.*)",
-            "dest": "/app.jsx"
-        }
-    ]
+            {
+                "src": "/(.*)",
+                "dest": "/app.js"
+            }
+        ]
 }
