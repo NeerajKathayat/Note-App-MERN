@@ -23,7 +23,7 @@ const Notes = () => {
     };
 
     const fetchNotes = async()=>{
-        let getNote = await fetch("http://localhost:4000/get-note",{
+        let getNote = await fetch("https://note-app-mern-six.vercel.app/get-note",{
             method:'GET',
             headers:{
                 'Content-Type':'application/json'
@@ -69,7 +69,7 @@ const Notes = () => {
 
 
     const handleDelete = async (note) => {
-        let deleteNote = await fetch(`http://localhost:4000/delete-note/${note._id}`,{
+        let deleteNote = await fetch(`https://note-app-mern-six.vercel.app/delete-note/${note._id}`,{
             method:'DELETE',
                 headers:{
                    'Content-Type':'application/json'
@@ -109,7 +109,7 @@ const Notes = () => {
     const handlePinned = async (note)=>{
           let pinned = !note.isPinned;
           console.log("pinned" + pinned)
-          let result = await fetch(`http://localhost:4000/updated-note-pinned/${note._id}`,{
+          let result = await fetch(`https://note-app-mern-six.vercel.app/updated-note-pinned/${note._id}`,{
             method:'PUT',
             headers:{
                 'Content-Type':'application/json'

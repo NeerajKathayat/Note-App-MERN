@@ -6,7 +6,7 @@ const ProfileInfo = () => {
 
     const handleLogout = async()=>{
         try{
-            const response = await fetch('http://localhost:4000/logout',{
+            const response = await fetch('https://note-app-mern-six.vercel.app/logout',{
                 method: 'POST',
                 credentials: 'include', // Important to include cookies in the request
                 headers: {

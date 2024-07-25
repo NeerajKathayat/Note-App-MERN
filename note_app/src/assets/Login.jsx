@@ -35,7 +35,7 @@ const Login = () => {
             setError("Please enter email")
           }
           else{
-             let result = await fetch("http://localhost:4000/login",{
+             let result = await fetch("https://note-app-mern-six.vercel.app/login",{
                 method:'POST',
                 headers:{
                    'Content-Type':'application/json'
