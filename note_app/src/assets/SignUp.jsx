@@ -38,7 +38,7 @@ const SignUp = () => {
             setError("Please enter email")
           }
           else{
-               let result = await fetch("https://note-app-mern-six.vercel.app/signup",{
+               let result = await fetch("https://note-app-mern-sable.vercel.app/signup",{
                    method:'POST',
                    headers:{
                     'Content-Type':'application/json'
